@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark_theme_toggle.css">
+</head>
+<body>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+    <div id="container" class="container">
+        <h1>Sprichst du Deutsch?</h1>
+        <div id="question-section">
+            <select name="question-options" id="question-options">
+                <option value="" disabled selected>Wählst ein Wort aus</option>
+                <option value="revise">Revise Marked Questions</option>
+                <option value="normal">Normal Questions</option>
+
+                <script>
+                    const selectElement = document.getElementById('question-options');
+
+                    data.forEach((option, index) => {
+                        // Create a new option element
+                        const newOption = document.createElement('option');
+                        
+                        // Set the value to the "id" from the object
+                        newOption.value = index;
+                        
+                        // Set the text content to the "desc" from the object
+                        const questionText = option.Deutsch || option.Englisch;
+                        newOption.textContent = questionText;
+                        
+                        // Append the new option to the select element
+                        selectElement.appendChild(newOption);
+                    });
+                </script>
+            </select>
+
+
+            <p id="question-text"></p>
+
+            <form id="answerForm">                
+                <input type="text" id="user-answer" placeholder="Enter your answer">
+                <button id="submit-answer">Submit</button>
+            </form>
+            <button id="next-question">Next Question</button>
+        </div>
+        <div id="result-section">
+            <p id="result-text"></p>
+            <a id="result-link" href="#" target="_blank"></a>
+            <p id="result-detail-text"></p>
+        </div>
+        <div>
+            <button id="mark-question">Mark</button>
+            <button id="unmark-question">Unmark</button>
+            <button id="revise-marked">Revise Marked Questions</button>
+        </div>
+    </div>
+
+    <div class="toggle_container">
+        <span>	&#9728; </span>
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label> 
+    </div>
+
+    <script src="dark_theme_toggle.js"></script>
+
+</body>
+</html>
