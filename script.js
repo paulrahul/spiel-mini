@@ -9,6 +9,11 @@ const SERVER = "http://localhost:5000/";
 // const SERVER = "https://deutsches-spiel-408818.lm.r.appspot.com/";
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Load the last normal question.
+    const idx = localStorage.getItem("lastNormalQuestion");
+    if (idx) {
+        currentIndex = parseInt(idx);
+    }
     loadQuestion();
 
     window.onload = function() {
@@ -54,17 +59,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 showDetails();
             }
         }
-    });    
+    });
 });
 
 function populateMarkedQuestions() {
     populateQuestions(markedQuestions);
     isRevising = true;
+    // Load the last revised question.
+    const idx = localStorage.getItem("lastRevisedQuestion");
+    if (idx) {
+        currentIndex = parseInt(idx);
+    }
+    loadQuestion();
 }
 
 function populateNormalQuestions() {
     populateQuestions(Array.from(Array(data.length).keys()));
     isRevising = false;
+    // Load the last normal question.
+    const idx = localStorage.getItem("lastNormalQuestion");
+    if (idx) {
+        currentIndex = parseInt(idx);
+    }
+    loadQuestion();
 }
 
 function populateQuestions(questions) {
@@ -107,6 +124,12 @@ function loadQuestion() {
     document.getElementById('result-detail-text').style.display = 'none';
 
     document.getElementById('user-answer').focus();
+
+    if (isRevising) {
+        localStorage.setItem('lastRevisedQuestion', currentIndex.toString());
+    } else {
+        localStorage.setItem('lastNormalQuestion', currentIndex.toString());
+    }
 }
 
 function checkAnswer() {
