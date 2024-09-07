@@ -1,4 +1,5 @@
 let currentIndex = 0;
+let previousIndex = 0;
 let markedQuestions = JSON.parse(localStorage.getItem('markedQuestions')) || [];
 let isRevising = false;
 let revisionIndex = 0;
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('submit-answer').addEventListener('click', checkAnswer);
     document.getElementById('next-question').addEventListener('click', nextQuestion);
+    document.getElementById('previous-question').addEventListener('click', previousQuestion);
     document.getElementById('mark-question').addEventListener('click', markQuestion);
     document.getElementById('unmark-question').addEventListener('click', unmarkQuestion);
     document.getElementById('revise-marked').addEventListener('click', reviseMarkedQuestions);
@@ -57,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 reviseMarkedQuestions();
             } else if (event.key === 'd' || event.key === 'D') {
                 showDetails();
+            } else if (event.key === 'p' || event.key === 'P') {
+                previousQuestion();
             }
         }
     });
@@ -124,6 +128,7 @@ function loadQuestion() {
     document.getElementById('result-detail-text').style.display = 'none';
 
     document.getElementById('user-answer').focus();
+    document.getElementById('user-answer').value = "";
 
     if (isRevising) {
         localStorage.setItem('lastRevisedQuestion', currentIndex.toString());
@@ -153,6 +158,8 @@ function checkAnswer() {
 }
 
 function nextQuestion() {
+    previousIndex = currentIndex;
+
     if (isRevising) {
         revisionIndex++;
         if (revisionIndex >= markedQuestions.length) {
@@ -167,9 +174,11 @@ function nextQuestion() {
         currentIndex = (currentIndex + 1) % data.length;
     }
     loadQuestion();
+}
 
-    document.getElementById('user-answer').focus();
-    document.getElementById('user-answer').value = "";
+function previousQuestion() {
+    currentIndex = previousIndex;
+    loadQuestion();
 }
 
 function markQuestion() {
