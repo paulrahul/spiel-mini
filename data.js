@@ -1,5 +1,941 @@
 const data = [
     {
+        "Deutsch": "empfindlich",
+        "Englisch": "",
+        "Bedeutung": "sensitive",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "einmalige",
+        "Englisch": "",
+        "Bedeutung": "unique",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "mangel",
+        "Englisch": "",
+        "Bedeutung": "shortage",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erb\u00e4rmlich",
+        "Englisch": "",
+        "Bedeutung": "pathetic",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "festgestellt",
+        "Englisch": "",
+        "Bedeutung": "noted",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Gaumen",
+        "Englisch": "",
+        "Bedeutung": "palate",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "abl\u00f6sen",
+        "Englisch": "",
+        "Bedeutung": "replace",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "wahrnehmen",
+        "Englisch": "",
+        "Bedeutung": "perceive",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "auch wenn nat\u00fcrlich weiterhin gilt",
+        "Englisch": "",
+        "Bedeutung": "even though of course it still applies",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "den Vorwurf gefallen lassen",
+        "Englisch": "",
+        "Bedeutung": "to accept the accusation",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Entschlossenheit",
+        "Englisch": "",
+        "Bedeutung": "determination",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "sch\u00e4tzt",
+        "Englisch": "",
+        "Bedeutung": "estimates",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "anpassen",
+        "Englisch": "",
+        "Bedeutung": "adjust",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "vorweggenommen",
+        "Englisch": "",
+        "Bedeutung": "anticipated",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "galten",
+        "Englisch": "",
+        "Bedeutung": "applied",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erforderlich",
+        "Englisch": "",
+        "Bedeutung": "necessary",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "wehren",
+        "Englisch": "",
+        "Bedeutung": "defend yourself",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "gierig",
+        "Englisch": "",
+        "Bedeutung": "greedy",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "hingegen",
+        "Englisch": "",
+        "Bedeutung": "however",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "unmittelbare",
+        "Englisch": "",
+        "Bedeutung": "immediate",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Straftat",
+        "Englisch": "",
+        "Bedeutung": "Crime",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Abschiebung",
+        "Englisch": "",
+        "Bedeutung": "deportation",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Haltung",
+        "Englisch": "",
+        "Bedeutung": "attitude",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verurteilt",
+        "Englisch": "",
+        "Bedeutung": "sentenced",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Vorfall",
+        "Englisch": "",
+        "Bedeutung": "incident",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Glanz",
+        "Englisch": "",
+        "Bedeutung": "shine",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "aberkennen",
+        "Englisch": "",
+        "Bedeutung": "but deny",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Unversehrtheit",
+        "Englisch": "",
+        "Bedeutung": "Integrity",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erstatten",
+        "Englisch": "",
+        "Bedeutung": "reimburse",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Bewertung",
+        "Englisch": "",
+        "Bedeutung": "Evaluation",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verfahren",
+        "Englisch": "",
+        "Bedeutung": "procedure",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Abkommen",
+        "Englisch": "",
+        "Bedeutung": "Agreement",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Hinzu kommen",
+        "Englisch": "",
+        "Bedeutung": "In addition,",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "auszeichnen",
+        "Englisch": "",
+        "Bedeutung": "award",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verwebt",
+        "Englisch": "",
+        "Bedeutung": "interwoven",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Eintr\u00e4ge",
+        "Englisch": "",
+        "Bedeutung": "Entries",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "angesto\u00dfen",
+        "Englisch": "",
+        "Bedeutung": "initiated",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "aneckt",
+        "Englisch": "",
+        "Bedeutung": "It causes friction",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ausgebaut",
+        "Englisch": "",
+        "Bedeutung": "expanded",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "umgesetzt",
+        "Englisch": "",
+        "Bedeutung": "implemented",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "gewisse",
+        "Englisch": "",
+        "Bedeutung": "certain",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "auf die F\u00fc\u00dfe gefallen",
+        "Englisch": "",
+        "Bedeutung": "fell on their feet",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erlangt",
+        "Englisch": "",
+        "Bedeutung": "obtained",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Umgang",
+        "Englisch": "",
+        "Bedeutung": "Handling",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "abtr\u00e4gt",
+        "Englisch": "",
+        "Bedeutung": "removes",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Anziehungspunkt",
+        "Englisch": "",
+        "Bedeutung": "Attraction",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "dezidierten",
+        "Englisch": "",
+        "Bedeutung": "dedicated",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Gegenwartsbezug",
+        "Englisch": "",
+        "Bedeutung": "Relevance to the present",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ausstrahlte",
+        "Englisch": "",
+        "Bedeutung": "radiated",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "in",
+        "Englisch": "",
+        "Bedeutung": "in",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Auftrag",
+        "Englisch": "",
+        "Bedeutung": "Order",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Auftrag",
+        "Englisch": "",
+        "Bedeutung": "Order",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Verfassung",
+        "Englisch": "",
+        "Bedeutung": "Constitution",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "begehrt",
+        "Englisch": "",
+        "Bedeutung": "highly sought after",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "begehrt",
+        "Englisch": "",
+        "Bedeutung": "highly sought after",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Wettbewerb",
+        "Englisch": "",
+        "Bedeutung": "Competition",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ausgesetzt",
+        "Englisch": "",
+        "Bedeutung": "exposed",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Einfluss",
+        "Englisch": "",
+        "Bedeutung": "Influence",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "zunehmender",
+        "Englisch": "",
+        "Bedeutung": "increasing",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Angesichts",
+        "Englisch": "",
+        "Bedeutung": "Given",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "anspruchsberechtigt",
+        "Englisch": "",
+        "Bedeutung": "eligible",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "betroffen",
+        "Englisch": "",
+        "Bedeutung": "affected",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "dagegen",
+        "Englisch": "",
+        "Bedeutung": "against it",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "w\u00fcrgt",
+        "Englisch": "",
+        "Bedeutung": "chokes",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "abwehr",
+        "Englisch": "",
+        "Bedeutung": "defense",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "zust\u00e4ndige",
+        "Englisch": "",
+        "Bedeutung": "responsible",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "geneigten",
+        "Englisch": "",
+        "Bedeutung": "inclined",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "vermeintlich",
+        "Englisch": "",
+        "Bedeutung": "supposedly",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "herrscht",
+        "Englisch": "",
+        "Bedeutung": "prevails",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "umme",
+        "Englisch": "",
+        "Bedeutung": "umme",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "document",
+        "Englisch": "",
+        "Bedeutung": "document",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "aufgesogen",
+        "Englisch": "",
+        "Bedeutung": "absorbed",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "vertriebenen",
+        "Englisch": "",
+        "Bedeutung": "displaced persons",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ger\u00e4uscharm",
+        "Englisch": "",
+        "Bedeutung": "low noise",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "alle",
+        "Englisch": "",
+        "Bedeutung": "all",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "F\u00fcr",
+        "Englisch": "",
+        "Bedeutung": "For",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Monat",
+        "Englisch": "",
+        "Bedeutung": "Month",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "",
+        "Englisch": "",
+        "Bedeutung": "",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Du",
+        "Englisch": "",
+        "Bedeutung": "You",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Du",
+        "Englisch": "",
+        "Bedeutung": "You",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "beschlossen",
+        "Englisch": "",
+        "Bedeutung": "decided",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "versch\u00e4rfen",
+        "Englisch": "",
+        "Bedeutung": "exacerbate",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Ermittlungen",
+        "Englisch": "",
+        "Bedeutung": "Investigations",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Eingriffe",
+        "Englisch": "",
+        "Bedeutung": "Interventions",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erlitten",
+        "Englisch": "",
+        "Bedeutung": "suffered",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "bewahren",
+        "Englisch": "",
+        "Bedeutung": "preserve",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "herausgestellt",
+        "Englisch": "",
+        "Bedeutung": "highlighted",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "von nichts ausgehen",
+        "Englisch": "",
+        "Bedeutung": "starting from nothing",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verzerrten",
+        "Englisch": "",
+        "Bedeutung": "distorted",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "bewusst",
+        "Englisch": "",
+        "Bedeutung": "consciously",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "nachvollziehen",
+        "Englisch": "",
+        "Bedeutung": "comprehend",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verborgen",
+        "Englisch": "",
+        "Bedeutung": "hidden",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "vorhanden",
+        "Englisch": "",
+        "Bedeutung": "available",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "belegt",
+        "Englisch": "",
+        "Bedeutung": "proven",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "einstellen",
+        "Englisch": "",
+        "Bedeutung": "set",
+        "Synonyms": "stop, suspend"
+    },
+    {
+        "Deutsch": "vors\u00e4tzlich",
+        "Englisch": "",
+        "Bedeutung": "intentionally",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Sturz",
+        "Englisch": "",
+        "Bedeutung": "Fall",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "",
+        "Englisch": "temporary",
+        "Bedeutung": "vor\u00fcbergehend",
+        "Synonyms": "zeitweilig"
+    },
+    {
+        "Deutsch": "zeitgen\u00f6ssisch",
+        "Englisch": "",
+        "Bedeutung": "contemporary",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "pr\u00e4gen",
+        "Englisch": "",
+        "Bedeutung": "imprint",
+        "Synonyms": "shape"
+    },
+    {
+        "Deutsch": "anlass",
+        "Englisch": "",
+        "Bedeutung": "occasion",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "umtreibt",
+        "Englisch": "",
+        "Bedeutung": "is troubling",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "haltung",
+        "Englisch": "",
+        "Bedeutung": "attitude",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "",
+        "Englisch": "layer",
+        "Bedeutung": "Schicht",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Eifrig",
+        "Englisch": "",
+        "Bedeutung": "eager",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "empfindlich",
+        "Englisch": "",
+        "Bedeutung": "sensitive",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verbogen",
+        "Englisch": "",
+        "Bedeutung": "bent",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Betroffen",
+        "Englisch": "",
+        "Bedeutung": "Affected",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "\u00dcbergreifen",
+        "Englisch": "",
+        "Bedeutung": "Overlapping",
+        "Synonyms": "spread"
+    },
+    {
+        "Deutsch": "Gelassenheit",
+        "Englisch": "",
+        "Bedeutung": "serenity",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ihm zufolge",
+        "Englisch": "",
+        "Bedeutung": "according to him",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "labile",
+        "Englisch": "",
+        "Bedeutung": "unstable",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "einigen sich",
+        "Englisch": "",
+        "Bedeutung": "agree",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "lobt",
+        "Englisch": "",
+        "Bedeutung": "praises",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "gegenw\u00e4rtige",
+        "Englisch": "",
+        "Bedeutung": "current",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "eindringlich",
+        "Englisch": "",
+        "Bedeutung": "intense",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verdreckt",
+        "Englisch": "",
+        "Bedeutung": "dirty",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "\u00fcberwiegend",
+        "Englisch": "",
+        "Bedeutung": "mostly",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Beauftragte",
+        "Englisch": "",
+        "Bedeutung": "Commissioner",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "reifen",
+        "Englisch": "",
+        "Bedeutung": "tires",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "wesentlich",
+        "Englisch": "",
+        "Bedeutung": "significant",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "zart",
+        "Englisch": "",
+        "Bedeutung": "tender",
+        "Synonyms": "zart"
+    },
+    {
+        "Deutsch": "ebenfalls",
+        "Englisch": "",
+        "Bedeutung": "also",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Verdachts",
+        "Englisch": "",
+        "Bedeutung": "Suspicion",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "betonte",
+        "Englisch": "",
+        "Bedeutung": "emphasized",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Strafe",
+        "Englisch": "",
+        "Bedeutung": "Penalty",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "angeklagt",
+        "Englisch": "",
+        "Bedeutung": "accused",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Zunahme",
+        "Englisch": "",
+        "Bedeutung": "increase",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Verteuerung",
+        "Englisch": "",
+        "Bedeutung": "Price increase",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "untersch\u00e4tzt",
+        "Englisch": "",
+        "Bedeutung": "underestimated",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "angewiesen",
+        "Englisch": "",
+        "Bedeutung": "instructed",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "tr\u00fcgen",
+        "Englisch": "",
+        "Bedeutung": "deceive",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "erheblich",
+        "Englisch": "",
+        "Bedeutung": "significant",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "vergeblich",
+        "Englisch": "",
+        "Bedeutung": "vain",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "verweise an",
+        "Englisch": "",
+        "Bedeutung": "references to",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "hemmung",
+        "Englisch": "",
+        "Bedeutung": "inhibition",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "pr\u00e4gen",
+        "Englisch": "",
+        "Bedeutung": "imprint",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "abgelaufen",
+        "Englisch": "",
+        "Bedeutung": "expired",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "belastet",
+        "Englisch": "",
+        "Bedeutung": "charged",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "gewalt",
+        "Englisch": "",
+        "Bedeutung": "force",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "feststellen",
+        "Englisch": "",
+        "Bedeutung": "notice",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "betreffen",
+        "Englisch": "",
+        "Bedeutung": "regarding",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "eingegriffen",
+        "Englisch": "",
+        "Bedeutung": "intervened",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "anst\u00e4ndig",
+        "Englisch": "",
+        "Bedeutung": "respectable",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "entstehen",
+        "Englisch": "",
+        "Bedeutung": "arise",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "ausreicht",
+        "Englisch": "",
+        "Bedeutung": "sufficient",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "beherrschen",
+        "Englisch": "",
+        "Bedeutung": "command",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "zerbrechen",
+        "Englisch": "",
+        "Bedeutung": "break",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "zwangsl\u00e4ufig",
+        "Englisch": "",
+        "Bedeutung": "inevitably",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "",
+        "Englisch": "defeat",
+        "Bedeutung": "Verlust",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "untersagt",
+        "Englisch": "",
+        "Bedeutung": "prohibited",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "gestattet",
+        "Englisch": "",
+        "Bedeutung": "permitted",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Zubeh\u00f6r",
+        "Englisch": "",
+        "Bedeutung": "Accesories",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Empfindlich",
+        "Englisch": "",
+        "Bedeutung": "Sensitive",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "Einigung",
+        "Englisch": "",
+        "Bedeutung": "agreement",
+        "Synonyms": ""
+    },
+    {
+        "Deutsch": "abweichen",
+        "Englisch": "",
+        "Bedeutung": "differ",
+        "Synonyms": ""
+    },
+    {
         "Deutsch": "rasant",
         "Englisch": "",
         "Bedeutung": "racy",
@@ -64,6 +1000,12 @@ const data = [
         "Englisch": "",
         "Bedeutung": "noise",
         "Synonyms": ""
+    },
+    {
+        "Deutsch": "vorwiegend",
+        "Englisch": "",
+        "Bedeutung": "predominant",
+        "Synonyms": "predominant"
     },
     {
         "Deutsch": "versorgt",
@@ -164,7 +1106,7 @@ const data = [
     {
         "Deutsch": "Anheib",
         "Englisch": "",
-        "Bedeutung": "right away",
+        "Bedeutung": "Anheib",
         "Synonyms": ""
     },
     {
@@ -189,7 +1131,7 @@ const data = [
         "Deutsch": "",
         "Englisch": "confident",
         "Bedeutung": "selbstbewusst",
-        "Synonyms": "zuversichtlich"
+        "Synonyms": ""
     },
     {
         "Deutsch": "",
@@ -818,8 +1760,8 @@ const data = [
     {
         "Deutsch": "Ansehens",
         "Englisch": "",
-        "Bedeutung": "view",
-        "Synonyms": "reputation"
+        "Bedeutung": "cope",
+        "Synonyms": ""
     },
     {
         "Deutsch": "Lage",
@@ -861,7 +1803,7 @@ const data = [
         "Deutsch": "offenbar",
         "Englisch": "",
         "Bedeutung": "obviously",
-        "Synonyms": ""
+        "Synonyms": "offensichtlich"
     },
     {
         "Deutsch": "eingeschr\u00e4nkt",
@@ -945,7 +1887,7 @@ const data = [
         "Deutsch": "anerkannt",
         "Englisch": "",
         "Bedeutung": "recognized",
-        "Synonyms": ""
+        "Synonyms": "erkannt"
     },
     {
         "Deutsch": "einzelzen",
@@ -960,7 +1902,7 @@ const data = [
         "Synonyms": ""
     },
     {
-        "Deutsch": "Trost",
+        "Deutsch": "tr\u00f6sten",
         "Englisch": "",
         "Bedeutung": "Consolation",
         "Synonyms": ""
@@ -1047,7 +1989,7 @@ const data = [
         "Deutsch": "Verh\u00e4ltnissen",
         "Englisch": "",
         "Bedeutung": "Conditions",
-        "Synonyms": ""
+        "Synonyms": "bedingungen"
     },
     {
         "Deutsch": "heftig",
@@ -1227,7 +2169,7 @@ const data = [
         "Deutsch": "",
         "Englisch": "submit",
         "Bedeutung": "einreichen",
-        "Synonyms": ""
+        "Synonyms": "abgeben"
     },
     {
         "Deutsch": "",
@@ -1371,7 +2313,7 @@ const data = [
         "Deutsch": "",
         "Englisch": "console",
         "Bedeutung": "Konsole",
-        "Synonyms": ""
+        "Synonyms": "tr\u00f6sten"
     },
     {
         "Deutsch": "",
@@ -1686,7 +2628,7 @@ const data = [
         "Synonyms": ""
     },
     {
-        "Deutsch": "verwande",
+        "Deutsch": "verwandeln",
         "Englisch": "",
         "Bedeutung": "transform",
         "Synonyms": ""

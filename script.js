@@ -6,7 +6,7 @@ let revisionIndex = 0;
 let lastSerialIndex = 0;
 const dataLength = data.length;
 
-const SERVER = "http://localhost:5000/";
+const SERVER = "http://localhost:8082/";
 // const SERVER = "https://deutsches-spiel-408818.lm.r.appspot.com/";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -149,7 +149,7 @@ function checkAnswer() {
         document.getElementById('result-text').textContent = `Incorrect! The correct answers were: ${validAnswers.join(', ')}`;
     }
 
-    document.getElementById('result-link').href = "https://deutsches-spiel-408818.lm.r.appspot.com/lookup?wort=" + questionText;
+    document.getElementById('result-link').href = "http://localhost:8082/lookup?wort=" + questionText;
     document.getElementById('result-link').textContent = questionText;
 
     document.getElementById('question-section').style.display = 'none';
